@@ -60,13 +60,12 @@ addTwoNumbers('Hello', 5) //=> NaN
 // Your solution for 02-addTwoNumbers here:
 
 const addTwoNumbers = (num1, num2) => {
-  if ( typeof num1 !== Number) {
-    return NaN 
-  } else if (typeof num2 !== Number) {
-    return NaN
-  } else {
+  if (typeof num1 === 'number' && typeof num2 === 'number'){
     return (num1 + num2)
+  } else {
+    return NaN
   }
+  
 }
 
 /*-----------------------------------------------------------------
@@ -88,9 +87,14 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
+const sumNumbers = (array) => {
+  let total = 0
 
-
-
+  array.forEach(function (num) {
+  total += num
+  })
+  return total;
+}
 
 /*-----------------------------------------------------------------
 Challenge: 04-addList
