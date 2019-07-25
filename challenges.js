@@ -60,10 +60,10 @@ addTwoNumbers('Hello', 5) //=> NaN
 // Your solution for 02-addTwoNumbers here:
 
 const addTwoNumbers = (num1, num2) => {
-  if (typeof num1 === NaN){
-    return num1 
-  } else if (typeof num2 === NaN){
-    return num2
+  if ( typeof num1 !== Number) {
+    return NaN 
+  } else if (typeof num2 !== Number) {
+    return NaN
   } else {
     return (num1 + num2)
   }
