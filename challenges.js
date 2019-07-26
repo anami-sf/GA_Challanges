@@ -142,9 +142,10 @@ computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------*/
 // Your solution for 05-computeRemainder:
 
-
-
-
+const computeRemainder = (dividend, divisor) => {
+  if (divisor === 0){return Infinity}
+  return dividend % divisor
+}
 
 /*-----------------------------------------------------------------
 Challenge: 06-range
